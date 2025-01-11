@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: #000;
+    color: #fff;
+}
+
+.wrapper {
+    width: 700px;
+    max-width: 100%;
+    margin: 50px auto 0;
+}
+.menu_layout {
+    width: 90%;
+    background: #1d1d1d;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 0 15px;
+    margin-bottom: 60px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+
+}
+
+nav {
+    background: #1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 20px;
+    width: 100%;
+    position: relative;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.indicator {
+    position: absolute;
+    background: #000;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    transition: 0.3s linear 0s;
+}
+
+.layout_1 {
+    width: 60%;
+    border-radius: 10px;
+}
+
+.layout_1 .indicator {
+    background: #000;
+    height: 60px;
+    top: -8px;
+    border-radius: 0;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.layout_1 .indicator:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: 4px -6px 0 #000000;
+    border-top-right-radius: 20px;
+}
+
+.layout_1 .indicator:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -20px;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: -4px -6px 0 #000000;
+    border-top-left-radius: 20px;
+}
+
+.layout_1 .indicator span {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.layout_1 a {
+    font-size: 22px;
+    transition: 0.3s linear 0s;
+}
+
+.layout_1 li.active a {
+    margin-top: -8px;
+}
+
+/* Layout 2 */
+.layout_2 .indicator {
+    background: transparent;
+    border: 1.2px dashed #404040;
+}
+
+/* Layout 3 */
+.layout_3 {
+    border-radius: 0;
+    height: 50px;
+    padding: 0;
+}
+
+.layout_3 .indicator {
+    border-radius: 0;
+    background: #3f51b5;
+
+}
+
+/* Layout 4 */
+.layout_4 .indicator {
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 2px solid #ffffff;
+
+}
